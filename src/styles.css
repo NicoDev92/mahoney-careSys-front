@@ -1,0 +1,152 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    min-height: 100vh;
+}
+
+.text-green {
+    color: #03e021;
+}
+
+.text-yellow {
+    color: #fdb500;
+}
+
+.text-blue {
+    color: #0e26ff;
+}
+
+.text-red {
+    color: #ff0707;
+}
+
+.btn {
+    border: none
+}
+
+.btn-primary {
+    background: #00218b;
+}
+
+.btn-info {
+    background-color: #007b94;
+}
+
+.btn-danger {
+    background-color: #910202;
+}
+
+.btn-primary:hover {
+    background: #001a6d;
+}
+
+.btn-info:hover {
+    background-color: #045c68;
+}
+
+.btn-danger:hover {
+    background-color: #6b0101;
+}
+
+.logo-light {
+    filter: invert();
+}
+
+.patient-row-link {
+    text-decoration: none;
+}
+
+
+.chart-container {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.chart-container.chart-fade-in {
+    opacity: 1;
+}
+
+
+.open-modal {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+.animation {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+.loader {
+    width: 50px;
+    aspect-ratio: 1;
+    color: #dc1818;
+    background:
+        radial-gradient(circle at 60% 65%, currentColor 62%, #0000 65%) top left,
+        radial-gradient(circle at 40% 65%, currentColor 62%, #0000 65%) top right,
+        linear-gradient(to bottom left, currentColor 42%, #0000 43%) bottom left,
+        linear-gradient(to bottom right, currentColor 42%, #0000 43%) bottom right;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.loader:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: inherit;
+    opacity: 0.4;
+    animation: l3 1s infinite;
+}
+
+@keyframes l3 {
+    to {
+        transform: scale(1.8);
+        opacity: 0
+    }
+}
