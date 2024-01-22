@@ -1,5 +1,5 @@
 
-const URL_API = 'http://localhost:7070/controls';
+const URL_API = `${import.meta.env.VITE_SHOP_API_BASE_URL}controls`;
 
 export const getAllNursingControls = async (patientId) => {
     try {

@@ -1,4 +1,4 @@
-const URL_API = 'http://localhost:7070/histories';
+const URL_API = `${import.meta.env.VITE_SHOP_API_BASE_URL}/histories`;
 
 export const getMedicalHistory = async (patientId) => {
     try {
