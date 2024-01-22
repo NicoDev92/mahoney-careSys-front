@@ -1,4 +1,4 @@
-const URL_API = `${import.meta.env.VITE_SHOP_API_BASE_URL}patients`;
+const URL_API = `${import.meta.env.VITE_API_BASE_URL}/patients`;
 
 export const getPatientsPaged = async (pageNumber = 0, elementsQuantity = 10, keyword) => {
     let url = `${URL_API}/paged-patients`;

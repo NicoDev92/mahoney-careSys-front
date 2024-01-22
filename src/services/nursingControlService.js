@@ -1,5 +1,5 @@
 
-const URL_API = `${import.meta.env.VITE_SHOP_API_BASE_URL}controls`;
+const URL_API = `${import.meta.env.VITE_API_BASE_URL}/controls`;
 
 export const getAllNursingControls = async (patientId) => {
     try {
@@ -10,9 +10,9 @@ export const getAllNursingControls = async (patientId) => {
             },
         });
 
-        const historyData = !response.ok ? null : await response.json();
+        const nursingControls = !response.ok ? null : await response.json();
 
-        return historyData;
+        return nursingControls;
     } catch (error) {
         console.error('Error al buscar:', error);
         throw error;

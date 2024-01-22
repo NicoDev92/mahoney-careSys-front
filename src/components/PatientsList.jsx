@@ -133,7 +133,7 @@ export const PatientList = () => {
                 }
                 <div className="text-end mt-4">
                     <NavLink className="btn btn-warning"
-                        to={"/patients"}>
+                        to={"/"}>
                         <span className=" d-flex align-items-center justify-content-center">
                             <ion-icon name="arrow-back-sharp"></ion-icon>
                             <span className="ms-2">

@@ -1,4 +1,4 @@
-const URL_API = `${import.meta.env.VITE_SHOP_API_BASE_URL}/histories`;
+const URL_API = `${import.meta.env.VITE_API_BASE_URL}/histories`;
 
 export const getMedicalHistory = async (patientId) => {
     try {
@@ -9,11 +9,8 @@ export const getMedicalHistory = async (patientId) => {
             },
         });
 
-        if (!response.ok) {
-            throw new Error(`Error while getting medical history: ${response.statusText}`);
-        }
 
-        const medicalHistoryData = await response.json();
+        const medicalHistoryData = !response.ok ? null : await response.json();
 
         return medicalHistoryData;
     } catch (error) {
