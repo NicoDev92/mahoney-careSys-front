@@ -22,7 +22,7 @@ export const Navbar = () => {
                 <div className="container-fluid">
                     <NavLink className={`navbar-brand ${darkMode ? 'text-white' : 'text-dark'}`}
                         to="/">
-                        <img src="/src/assets/mahoney-logo.png"
+                        <img src="/mahoney-logo.png"
                             alt="Logo" width="35" height="35"
                             className={`me-2 d-inline-block align-text-top  ${darkMode ? 'logo-light' : 'logo-dark'}`}
                         />
