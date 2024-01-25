@@ -96,7 +96,7 @@ export const PatientList = () => {
                             handlePageChange={handlePageChange}
                             currentPage={currentPage}
                             totalPages={totalPages} />
-                        <table className="table table-striped table-hover my-3">
+                        <table className="table table-striped table-hover my-3 table-sm">
                             <thead>
                                 <tr>
                                     <th>Nombre</th>
@@ -142,7 +142,7 @@ export const PatientList = () => {
                         </span>
                     </NavLink>
                 </div>
-            </div>
+            </div >
         </>
     )
 }

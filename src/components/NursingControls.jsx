@@ -25,8 +25,8 @@ export const NursingControls = ({ nursingControls }) => {
                                         title={"Frecuencia Respiratoria"}
                                         nursingControls={nursingControls}
                                         vitalSign={"respiratoryRate"}
-                                        minScale={15}
-                                        maxScale={45}
+                                        minScale={0}
+                                        maxScale={55}
                                     />
                                 </div>
                                 <div className="border border-secondary-subtle border-1 rounded rounded-2 p-3 m-1 col nursingControlClass">
@@ -35,8 +35,8 @@ export const NursingControls = ({ nursingControls }) => {
                                         title={"Frecuencia Cardíaca"}
                                         nursingControls={nursingControls}
                                         vitalSign={"heartRate"}
-                                        minScale={30}
-                                        maxScale={180}
+                                        minScale={0}
+                                        maxScale={200}
                                     />
                                 </div>
                             </div>
@@ -49,8 +49,8 @@ export const NursingControls = ({ nursingControls }) => {
                                         title={"Temperatura corporal"}
                                         nursingControls={nursingControls}
                                         vitalSign={"temperature"}
-                                        minScale={34}
-                                        maxScale={43}
+                                        minScale={20}
+                                        maxScale={50}
                                     />
                                 </div>
                                 <div className="border border-secondary-subtle border-1 rounded rounded-2 p-3 m-1 col nursingControlClass"
@@ -60,8 +60,8 @@ export const NursingControls = ({ nursingControls }) => {
                                         title={"Presión sanguínea"}
                                         nursingControls={nursingControls}
                                         vitalSign={"bloodPressure"}
-                                        minScale={30}
-                                        maxScale={180}
+                                        minScale={0}
+                                        maxScale={200}
                                     />
                                 </div>
                             </div>

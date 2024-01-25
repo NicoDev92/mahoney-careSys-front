@@ -16,9 +16,9 @@ export const Home = () => {
                         el cuidado de los pacientes, proporcionando una herramienta efectiva y fácil de usar que potencia la atención personalizada y el
                         seguimiento detallado de los signos vitales a lo largo del tiempo.
                     </p>
-                    <p className="text-center">
-                        En honor a la visión pionera de la enfermera Mahoney, perseguimos
-                        la excelencia y la equidad en la atención médica moderna.
+                    <p className="text-center fst-italic">
+                        &#34;En honor a la visión pionera de la enfermera Mahoney, perseguimos
+                        la excelencia y la equidad en la atención médica moderna&#34;.
                     </p>
 
                 </div>
