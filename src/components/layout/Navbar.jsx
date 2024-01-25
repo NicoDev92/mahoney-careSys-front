@@ -52,7 +52,11 @@ export const Navbar = () => {
                         </button>
 
                     </div>
-                    <div className="offcanvas offcanvas-end bg-primary-subtle" tabIndex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div className="offcanvas offcanvas-end bg-primary-subtle"
+                        tabIndex="-1"
+                        style={{ width: '300px' }}
+                        id="offcanvasDarkNavbar"
+                        aria-labelledby="offcanvasDarkNavbarLabel">
                         <div className="offcanvas-header">
                             <h5 className="offcanvas-title" id="offcanvasDarkNavbarLabel">Mahoney CareSys</h5>
                             <button type="button" className="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
